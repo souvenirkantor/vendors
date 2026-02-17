@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="canonical" href="https://vendorsouvenir.web.id/example-article">
+    <title>Contoh Artikel dengan Template Baru | Maroon Souvenir</title>
+    <link rel="icon" type="image/webp" href="assets/logo.webp">
+    <meta name="description"
+        content="Ini adalah contoh implementasi template artikel baru dengan layout maksimal dan optimasi SEO terbaik.">
+    <meta name="keywords" content="contoh artikel, template, souvenir kantor, maroon souvenir">
+    <meta name="author" content="Maroon Souvenir">
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contoh Artikel dengan Template Baru">
+    <meta property="og:description" content="Implementasi template artikel dengan layout maksimal 1200px">
+    <meta property="og:image" content="https://vendorsouvenir.web.id/assets/seminar-kit.webp">
+    <meta property="og:url" content="https://vendorsouvenir.web.id/example-article">
+    <meta property="og:type" content="article">
+
+    <!-- Fonts & Icons -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="article-template.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Contoh Artikel dengan Template Baru",
+        "description": "Implementasi template artikel dengan layout maksimal dan optimasi SEO",
+        "image": "https://vendorsouvenir.web.id/assets/seminar-kit.webp",
+        "author": {
+            "@type": "Organization",
+            "name": "Maroon Souvenir",
+            "url": "https://vendorsouvenir.web.id"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Maroon Souvenir",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://vendorsouvenir.web.id/assets/logo.webp"
+            }
+        },
+        "datePublished": "2026-02-16T21:20:00+07:00",
+        "dateModified": "2026-02-16T21:20:00+07:00"
+    }
+    </script>
+
+    <!-- FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [{
+            "@type": "Question",
+            "name": "Apa keunggulan template baru ini?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Template baru memiliki layout maksimal 1200px (bukan 800px), gambar berkualitas tinggi untuk SEO, dan mobile-first responsive design."
+            }
+        }, {
+            "@type": "Question",
+            "name": "Bagaimana cara menggunakan template ini?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cukup link file article-template.css di head section, lalu gunakan class-class yang sudah disediakan seperti .article-content, .toc-container, dll."
+            }
+        }]
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="/" class="logo">
+                <img src="assets/logo.webp" alt="Maroon Souvenir Logo" style="height: 40px; margin-right: 0.5rem;">
+                Maroon<span style="color:var(--foreground)">Souvenir</span>
+            </a>
+            <div class="nav-menu">
+                <a href="/">Beranda</a>
+                <a href="about">Tentang</a>
+                <a href="produk">Produk</a>
+                <a href="paket">Paket</a>
+                <a href="blog" class="text-accent" style="font-weight: 700;">Blog</a>
+                <a href="https://wa.me/62895639068080" class="btn btn-primary">
+                    Chat Admin <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section (Hero) -->
+    <section class="hero"
+        style="background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)), url('assets/seminar-kit.webp'); padding: 6rem 0 4rem; position: relative;">
+        <div class="container text-center text-white" style="position: relative; z-index: 2;">
+            <span class="badge"
+                style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2); margin-bottom: 1rem; display: inline-block;">EXAMPLE
+                TEMPLATE</span>
+            <h1
+                style="font-size: 2.25rem; font-weight: 800; margin-bottom: 1rem; color: #ffffff; max-width: 900px; margin-left: auto; margin-right: auto; line-height: 1.3;">
+                Contoh Artikel dengan Template Baru: Layout Maksimal & SEO Optimal</h1>
+            <p style="font-size: 1.1rem; opacity: 0.9; max-width: 700px; margin: 0 auto; color: #e2e8f0;">
+                Implementasi template artikel dengan max-width 1200px, gambar berkualitas tinggi, dan mobile-first
+                responsive design.
+            </p>
+            <div style="margin-top: 2rem; font-size: 0.9rem; color: #cbd5e1;">
+                <i class="fa-regular fa-calendar"></i> 16 Februari 2026 &nbsp;&bull;&nbsp; <i
+                    class="fa-regular fa-user"></i> Maroon Souvenir Team
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <div style="background: white; padding: 1rem 0; border-bottom: 1px solid #f1f5f9;">
+        <div class="container">
+            <nav style="font-size: 0.85rem; color: #64748b;">
+                <a href="/" style="text-decoration: none; color: #64748b;">Home</a>
+                <span style="margin: 0 0.5rem; color: #cbd5e1;">/</span>
+                <a href="blog" style="text-decoration: none; color: #64748b;">Blog</a>
+                <span style="margin: 0 0.5rem; color: #cbd5e1;">/</span>
+                <span style="color: var(--primary); font-weight: 600;">Example Article</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <section class="section-padding" style="background: #ffffff;">
+        <div class="container">
+            <div class="grid grid-cols-1 lg-grid-cols-3 gap-12">
+
+                <!-- Article Content (Left) -->
+                <div class="lg-col-span-2 article-content">
+
+                    <!-- Main Image -->
+                    <figure class="article-image-figure" style="margin-top: 0;">
+                        <img src="assets/seminar-kit.webp" alt="Contoh Template Artikel" width="1200" height="675"
+                            style="width: 100%; height: auto;">
+                        <figcaption class="article-image-caption">Ilustrasi: Template artikel baru dengan layout
+                            maksimal (Sumber: Maroon Souvenir)</figcaption>
+                    </figure>
+
+                    <!-- Table of Contents -->
+                    <div class="toc-container" id="toc-container">
+                        <div class="toc-title" onclick="toggleToc()">
+                            Daftar Isi <i class="fa-solid fa-chevron-down" id="toc-icon"></i>
+                        </div>
+                        <ul class="toc-list" id="toc-list">
+                            <!-- JS will populate -->
+                        </ul>
+                    </div>
+
+                    <!-- Lead Paragraph -->
+                    <p class="lead">Template artikel baru ini dirancang khusus untuk memaksimalkan layout dan kualitas
+                        gambar, sesuai dengan update algoritma Google terbaru 2026. Dengan max-width 1200px (bukan
+                        800px), artikel Anda akan terlihat lebih profesional dan engaging.</p>
+
+                    <h2>Keunggulan Template Baru</h2>
+                    <p>Template ini memiliki beberapa keunggulan utama yang membedakannya dari template lama:</p>
+
+                    <h3>1. Layout Maksimal (1200px)</h3>
+                    <p>Tidak lagi dibatasi dengan max-width 800px yang terlalu sempit. Template baru menggunakan
+                        <strong>max-width 1200px</strong> yang memberikan ruang lebih luas untuk konten, terutama untuk
+                        tabel dan gambar.
+                    </p>
+
+                    <h3>2. Gambar Berkualitas Tinggi</h3>
+                    <p>Semua gambar ditampilkan dengan <strong>width: 100%</strong> dan <strong>height: auto</strong>,
+                        memastikan gambar tampil maksimal tanpa distorsi. Ini sangat penting untuk SEO karena Google
+                        lebih menyukai image preview yang besar.</p>
+
+                    <figure class="article-image-figure">
+                        <img src="assets/corporate-gift.webp" alt="Corporate Gift Premium" width="1200" height="800">
+                        <figcaption class="article-image-caption">Contoh gambar dengan kualitas maksimal</figcaption>
+                    </figure>
+
+                    <h3>3. Mobile-First Responsive</h3>
+                    <p>Template ini dibangun dengan pendekatan mobile-first, memastikan tampilan optimal di semua
+                        device:</p>
+                    <ul>
+                        <li>Author bio yang proporsional di mobile</li>
+                        <li>Button CTA full width di layar kecil</li>
+                        <li>Tabel dengan horizontal scroll</li>
+                        <li>Share buttons yang centered</li>
+                        <li>Related articles dalam 1 kolom</li>
+                    </ul>
+
+                    <blockquote>
+                        "Layout yang baik bukan hanya soal estetika, tapi juga tentang bagaimana konten dapat dengan
+                        mudah dikonsumsi oleh pembaca di berbagai device."
+                    </blockquote>
+
+                    <h2>Fitur-Fitur Lengkap</h2>
+
+                    <h3>Table of Contents (TOC)</h3>
+                    <p>TOC otomatis yang di-generate dari heading H2 dan H3, memudahkan pembaca untuk navigasi cepat ke
+                        section yang diinginkan.</p>
+
+                    <h3>Responsive Tables</h3>
+                    <p>Tabel yang responsive dengan horizontal scroll di mobile:</p>
+
+                    <div class="responsive-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Fitur</th>
+                                    <th>Template Lama</th>
+                                    <th>Template Baru</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Max Width</td>
+                                    <td>800px</td>
+                                    <td>1200px</td>
+                                </tr>
+                                <tr>
+                                    <td>Image Quality</td>
+                                    <td>Standard</td>
+                                    <td>Maximum</td>
+                                </tr>
+                                <tr>
+                                    <td>Mobile Responsive</td>
+                                    <td>Basic</td>
+                                    <td>Mobile-First</td>
+                                </tr>
+                                <tr>
+                                    <td>SEO Optimization</td>
+                                    <td>Good</td>
+                                    <td>Excellent</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h3>Content Boxes</h3>
+                    <p>Berbagai jenis content box untuk highlight informasi penting:</p>
+
+                    <div class="warning-box">
+                        <strong>⚠️ Perhatian:</strong> Pastikan semua gambar menggunakan format WebP untuk performa
+                        optimal.
+                    </div>
+
+                    <div class="info-box">
+                        <strong>ℹ️ Info:</strong> Template ini sudah include semua best practices SEO terbaru dari
+                        Google.
+                    </div>
+
+                    <div class="checklist-box">
+                        <strong>✅ Checklist:</strong> Semua artikel baru wajib menggunakan template ini untuk
+                        konsistensi.
+                    </div>
+
+                    <div class="baca-juga">
+                        <h4>Baca Juga:</h4>
+                        <ul>
+                            <li><a href="tips-memilih-vendor-souvenir-terpercaya">Tips Memilih Vendor Souvenir
+                                    Terpercaya</a></li>
+                            <li><a href="powerbank-custom-souvenir">Powerbank Custom untuk Souvenir Kantor</a></li>
+                            <li><a href="speaker-bluetooth-custom-logo">Speaker Bluetooth Custom Logo</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Promotional Banner -->
+                    <div class="promo-banner">
+                        <a href="https://wa.me/62895639068080" target="_blank">
+                            <div
+                                style="background: linear-gradient(90deg, #2563eb, #1d4ed8); padding: 2rem; border-radius: 1rem; color: white; text-decoration: none; box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);">
+                                <h3 style="color: white; margin-bottom: 0.5rem;">Butuh Souvenir Kantor Custom?</h3>
+                                <p style="color: #bfdbfe; margin-bottom: 1.5rem;">Dapatkan katalog gratis dan penawaran
+                                    spesial sekarang.</p>
+                                <span
+                                    style="background: white; color: #1d4ed8; padding: 0.75rem 1.5rem; border-radius: 9999px; font-weight: bold; display: inline-block;">
+                                    <i class="fa-brands fa-whatsapp"></i> Hubungi Kami di WhatsApp
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <h2>Kesimpulan</h2>
+                    <p>Template artikel baru ini adalah solusi terbaik untuk memaksimalkan layout dan SEO artikel blog
+                        Maroon Souvenir. Dengan layout 1200px, gambar berkualitas tinggi, dan mobile-first design,
+                        artikel Anda akan lebih menarik dan mudah ditemukan di Google.</p>
+                    <p>Mulai gunakan template ini untuk semua artikel baru dan rasakan perbedaannya!</p>
+
+                    <!-- FAQ Section -->
+                    <div style="margin-top: 3rem;">
+                        <h2 style="margin-bottom: 1.5rem;">Pertanyaan Sering Diajukan (FAQ)</h2>
+                        <div class="faq-container">
+                            <div class="faq-item">
+                                <div class="faq-question">Apa keunggulan template baru ini? <i
+                                        class="fa-solid fa-chevron-down faq-icon"></i></div>
+                                <div class="faq-answer">Template baru memiliki layout maksimal 1200px (bukan 800px),
+                                    gambar berkualitas tinggi untuk SEO, dan mobile-first responsive design yang
+                                    memastikan tampilan optimal di semua device.</div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Bagaimana cara menggunakan template ini? <i
+                                        class="fa-solid fa-chevron-down faq-icon"></i></div>
+                                <div class="faq-answer">Cukup link file article-template.css di head section, lalu
+                                    gunakan class-class yang sudah disediakan seperti .article-content, .toc-container,
+                                    .share-buttons, dll. Lihat dokumentasi lengkap di ARTICLE-TEMPLATE-DOCS.md</div>
+                            </div>
+                            <div class="faq-item">
+                                <div class="faq-question">Apakah template ini SEO-friendly? <i
+                                        class="fa-solid fa-chevron-down faq-icon"></i></div>
+                                <div class="faq-answer">Ya, sangat! Template ini sudah mengikuti semua best practices
+                                    SEO terbaru dari Google, termasuk image optimization, mobile-first design, proper
+                                    heading hierarchy, dan schema markup.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Share Buttons -->
+                    <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid #e2e8f0;">
+                        <p style="font-weight: 600; margin-bottom: 1rem;">Bagikan artikel ini:</p>
+                        <div class="share-buttons">
+                            <a href="https://wa.me/?text=Contoh Artikel Template Baru%20https://vendorsouvenir.web.id/example-article"
+                                class="share-btn whatsapp" target="_blank">
+                                <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                            </a>
+                            <a href="https://www.facebook.com/sharer/sharer.php?u=https://vendorsouvenir.web.id/example-article"
+                                class="share-btn facebook" target="_blank">
+                                <i class="fa-brands fa-facebook"></i> Facebook
+                            </a>
+                            <a href="https://twitter.com/intent/tweet?text=Contoh Artikel Template Baru&url=https://vendorsouvenir.web.id/example-article"
+                                class="share-btn twitter" target="_blank">
+                                <i class="fa-brands fa-twitter"></i> Twitter
+                            </a>
+                            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://vendorsouvenir.web.id/example-article&title=Contoh Artikel Template Baru"
+                                class="share-btn linkedin" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Author Bio -->
+                    <div class="author-bio">
+                        <img src="assets/logo.webp" alt="Maroon Souvenir" class="author-avatar">
+                        <div>
+                            <h4 style="margin-bottom: 0.5rem; color: var(--foreground);">Maroon Souvenir Editorial Team
+                            </h4>
+                            <p style="font-size: 0.9rem; color: #64748b; margin: 0;">
+                                Kami adalah tim profesional di industri souvenir kantor dan merchandise promosi.
+                                Berpengalaman melayani ratusan perusahaan di Indonesia sejak 2015. Misi kami membantu
+                                branding bisnis Anda melalui produk berkualitas.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Related Articles -->
+                    <div style="margin-top: 4rem;">
+                        <h2 style="border-left: 5px solid var(--accent); padding-left: 1rem; margin-bottom: 2rem;">
+                            Artikel Terkait</h2>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <img src="assets/powerbank.webp" alt="Powerbank Custom" class="related-img">
+                                <div class="related-content">
+                                    <h4 class="related-title">Powerbank Custom untuk Souvenir Kantor</h4>
+                                    <p class="related-excerpt">Panduan lengkap memilih powerbank custom dengan logo
+                                        perusahaan untuk souvenir yang fungsional.</p>
+                                    <a href="powerbank-custom-souvenir" class="related-link">Baca Selengkapnya
+                                        &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="related-card">
+                                <img src="assets/speaker-bluetooth.webp" alt="Speaker Bluetooth" class="related-img">
+                                <div class="related-content">
+                                    <h4 class="related-title">Speaker Bluetooth Custom Logo Perusahaan</h4>
+                                    <p class="related-excerpt">Review lengkap speaker bluetooth custom untuk corporate
+                                        gift yang berkesan dan berkualitas.</p>
+                                    <a href="speaker-bluetooth-custom-logo" class="related-link">Baca Selengkapnya
+                                        &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="related-card">
+                                <img src="assets/flashdisk-kartu.webp" alt="Flashdisk Kartu" class="related-img">
+                                <div class="related-content">
+                                    <h4 class="related-title">Flashdisk Kartu untuk Media Promosi Modern</h4>
+                                    <p class="related-excerpt">Kenapa flashdisk kartu menjadi pilihan favorit untuk
+                                        souvenir seminar dan event perusahaan.</p>
+                                    <a href="flashdisk-kartu-promosi" class="related-link">Baca Selengkapnya &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Sidebar (Right) -->
+                <div>
+                    <div style="position: sticky; top: 120px;">
+                        <!-- CTA Widget -->
+                        <div class="widget-cta rounded-xl"
+                            style="background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: white; padding: 2rem; text-align: center; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);">
+                            <h3 style="color: white; margin-bottom: 1rem; font-size: 1.5rem;">Butuh Penawaran?</h3>
+                            <p style="margin-bottom: 1.5rem; opacity: 0.9;">Konsultasikan budget dan kebutuhan souvenir
+                                Anda gratis.</p>
+                            <a href="https://wa.me/62895639068080" class="btn"
+                                style="background: #25D366; color: white; width: 100%; justify-content: center; font-weight: 700; border: none;">
+                                <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid grid-cols-1 md-grid-cols-2 lg-footer-grid gap-6 text-center md-text-left"
+            style="color:white;">
+            <div>
+                <div class="logo flex justify-center md-justify-start"
+                    style="color:white; margin-bottom: 1rem; font-family: var(--font-heading); font-size: 1.75rem; font-weight: 800; text-shadow: 2px 2px 0px #1E293B; align-items: center; gap: 0.5rem;">
+                    Maroon Souvenir
+                </div>
+                <p style="opacity: 0.8; margin-bottom: 1.5rem;">Pusat souvenir kantor premium yang mengutamakan
+                    kualitas, kecepatan, dan kejujuran.</p>
+                <div class="flex gap-4 justify-center md-justify-start">
+                    <a href="#" style="font-size: 1.75rem;"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" style="font-size: 1.75rem;"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" style="font-size: 1.75rem;"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" style="font-size: 1.75rem;"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" style="font-size: 1.75rem;"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div>
+                <h4>Kontak</h4>
+                <ul style="opacity: 0.8; margin-bottom: 1.5rem;">
+                    <li><i class="fa-solid fa-location-dot"></i> Kirim Seluruh Indonesia</li>
+                    <li><i class="fa-brands fa-whatsapp"></i> +62 895 6390 68080</li>
+                    <li><i class="fa-solid fa-envelope"></i> sales@vendorsouvenir.web.id</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container text-center"
+            style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); opacity: 0.6; font-size: 0.875rem;">
+            &copy; 2026 Maroon Souvenir. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/62895639068080" class="float-wa">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button id="backToTop" class="back-to-top" title="Back to Top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // TOC Generation
+        document.addEventListener('DOMContentLoaded', function () {
+            const articleContent = document.querySelector('.article-content');
+            const tocList = document.getElementById('toc-list');
+            const headers = articleContent.querySelectorAll('h2, h3');
+
+            let idCounter = 1;
+
+            headers.forEach(header => {
+                const text = header.textContent;
+                if (text === 'Kesimpulan' || text.includes('Pertanyaan Sering Diajukan') || text === 'Artikel Terkait') return;
+
+                const id = 'header-' + idCounter++;
+                header.id = id;
+
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#' + id;
+                a.textContent = text;
+
+                if (header.tagName === 'H3') {
+                    li.classList.add('toc-h3');
+                }
+
+                li.appendChild(a);
+                tocList.appendChild(li);
+            });
+
+            // FAQ Accordion
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    item.classList.toggle('active');
+                });
+            });
+        });
+
+        function toggleToc() {
+            const list = document.getElementById('toc-list');
+            const icon = document.getElementById('toc-icon');
+            list.classList.toggle('collapsed');
+            if (list.classList.contains('collapsed')) {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-right');
+            } else {
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+
+</html>
