@@ -164,6 +164,11 @@ img {
     display: grid;
 }
 
+/* Fix for grid item overflow */
+.grid>* {
+    min-width: 0;
+}
+
 .grid-cols-1 {
     grid-template-columns: repeat(1, 1fr);
 }
